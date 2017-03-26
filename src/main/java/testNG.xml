@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestCases" >
+   <test name="SmokeTest">
+  <parameter name="device" value="mobile1"/>
+  
+    <classes>
+   <class name = "functional_testcases.Parallel_Test" />
+       <class name = "functional_testcases.Login" />
+   <class name = "functional_testcases.SignUp" />
+   <class name = "functional_testcases.Home" />
+    <class name = "functional_testcases.Search" />
+   <class name = "functional_testcases.Create_view"/>
+   <class name = "functional_testcases.CreateViewDetailsPage"/>
+   <class name = "functional_testcases.UpdateAccountwithInvalidDetails"/>
+   <class name = "functional_testcases.UpdateAccountWithValidDetails" />
+    <class name = "functional_testcases.Verify_Change_Password"/>
+    <class name = "functional_testcases.AddFrost"/>   
+    <class name = "functional_testcases.Cancel_View"/>
+    <class name = "functional_testcases.Delete_View"/>
+    <class name = "functional_testcases.Verify_ViewName_Changes" />
+     <class name = "functional_testcases.Frost_UI_Navigation_Flow" />
+     <class name = "functional_testcases.FrostPage_All_Screens_Pagination_SetUp" /> 
+     <class name = "functional_testcases.FrostThresholdTemperature"/>
+     <class name = "functional_testcases.Verify_Edit_Frost_Settings"/>
+     <class name = "functional_testcases.Verify_Edit_FrostReport" />         
+     <class name = "functional_testcases.Delete_frost"/> 
+     <class name = "functional_testcases.Crop_UI_Navigation_Flow"/> 
+     <class name = "functional_testcases.Crop_skipping_optional_data"/> 
+     <class name = "functional_testcases.CropThresholdTemperature"/>
+     <class name ="functional_testcases.Verify_Edit_Crop_Report" />
+     <class name ="functional_testcases.Verify_Edit_Crop_Settings" />
+     <class name = "functional_testcases.Delete_Crop"/>              
+    <class name = "functional_testcases.Irrigation_UI_Navigation_Flow" /> 
+    <class name = "functional_testcases.Irrigation_Verify_navigation_skipping_optional"/> 
+    <class name = "functional_testcases.Irrigation_verify_Alert"/>
+    <class name = "functional_testcases.Verify_Edit_Irrigation_Settings"/> 
+    <class name = "functional_testcases.Delete_Irrigation"/>
+    <class name = "functional_testcases.Weather_UI_Navigation_flow"/>
+    <class name = "functional_testcases.Weather_Skip_Optional"/> 
+   <class name = "functional_testcases.Verify_Edit_Weather_Report"/>
+   <class name = "functional_testcases.Delete_Weather"/> 
+   <class name = "functional_testcases.WeatherThresholdTemperature"/>
+   <class name = "functional_testcases.Verify_Location_Alert_Message" /> 
+   
+  <!-- 
+  
+ 
+  <class name = "functional_testcases.Login" />
+   <class name = "functional_testcases.SignUp" />
+   <class name = "functional_testcases.Home" />
+    <class name = "functional_testcases.Search" />
+   <class name = "functional_testcases.Create_view"/>
+   <class name = "functional_testcases.CreateViewDetailsPage"/>
+   <class name = "functional_testcases.UpdateAccountwithInvalidDetails"/>
+   <class name = "functional_testcases.UpdateAccountWithValidDetails" />
+    <class name = "functional_testcases.Verify_Change_Password"/>
+    <class name = "functional_testcases.AddFrost"/>   
+    <class name = "functional_testcases.Cancel_View"/>
+    <class name = "functional_testcases.Delete_View"/>
+    <class name = "functional_testcases.Verify_ViewName_Changes" />
+     <class name = "functional_testcases.Frost_UI_Navigation_Flow" />
+     <class name = "functional_testcases.FrostPage_All_Screens_Pagination_SetUp" /> 
+     <class name = "functional_testcases.FrostThresholdTemperature"/>
+     <class name = "functional_testcases.Verify_Edit_Frost_Settings"/>
+     <class name = "functional_testcases.Verify_Edit_FrostReport" />         
+     <class name = "functional_testcases.Delete_frost"/> 
+     <class name = "functional_testcases.Crop_UI_Navigation_Flow"/> 
+     <class name = "functional_testcases.Crop_skipping_optional_data"/> 
+     <class name = "functional_testcases.CropThresholdTemperature"/>
+     <class name ="functional_testcases.Verify_Edit_Crop_Report" />
+     <class name ="functional_testcases.Verify_Edit_Crop_Settings" />
+     <class name = "functional_testcases.Delete_Crop"/>              
+    <class name = "functional_testcases.Irrigation_UI_Navigation_Flow" /> 
+    <class name = "functional_testcases.Irrigation_Verify_navigation_skipping_optional"/> 
+    <class name = "functional_testcases.Irrigation_verify_Alert"/>
+    <class name = "functional_testcases.Verify_Edit_Irrigation_Settings"/> 
+    <class name = "functional_testcases.Delete_Irrigation"/>
+    <class name = "functional_testcases.Weather_UI_Navigation_flow"/>
+    <class name = "functional_testcases.Weather_Skip_Optional"/> 
+   <class name = "functional_testcases.Verify_Edit_Weather_Report"/>
+   <class name = "functional_testcases.Delete_Weather"/> 
+   <class name = "functional_testcases.WeatherThresholdTemperature"/>
+   <class name = "functional_testcases.Verify_Location_Alert_Message" /> 
+   
+   
+ <class name = "functional_testcases.Login" />
+   <class name = "functional_testcases.SignUp" />
+   <class name = "functional_testcases.Home" />
+    <class name = "functional_testcases.Search" />
+   <class name = "functional_testcases.Create_view"/>
+   <class name = "functional_testcases.CreateViewDetailsPage"/>
+   <class name = "functional_testcases.UpdateAccountwithInvalidDetails"/>
+   <class name = "functional_testcases.UpdateAccountWithValidDetails" />
+    <class name = "functional_testcases.Verify_Change_Password"/>
+    <class name = "functional_testcases.AddFrost"/>   
+    <class name = "functional_testcases.Cancel_View"/>
+    <class name = "functional_testcases.Delete_View"/>
+    <class name = "functional_testcases.Verify_ViewName_Changes" />
+     <class name = "functional_testcases.Frost_UI_Navigation_Flow" />
+     <class name = "functional_testcases.FrostPage_All_Screens_Pagination_SetUp" /> 
+     <class name = "functional_testcases.FrostThresholdTemperature"/>
+     <class name = "functional_testcases.Verify_Edit_Frost_Settings"/>
+     <class name = "functional_testcases.Verify_Edit_FrostReport" />         
+     <class name = "functional_testcases.Delete_frost"/> 
+     <class name = "functional_testcases.Crop_UI_Navigation_Flow"/> 
+     <class name = "functional_testcases.Crop_skipping_optional_data"/> 
+     <class name = "functional_testcases.CropThresholdTemperature"/>
+     <class name ="functional_testcases.Verify_Edit_Crop_Report" />
+     <class name ="functional_testcases.Verify_Edit_Crop_Settings" />
+     <class name = "functional_testcases.Delete_Crop"/>              
+    <class name = "functional_testcases.Irrigation_UI_Navigation_Flow" /> 
+    <class name = "functional_testcases.Irrigation_Verify_navigation_skipping_optional"/> 
+    <class name = "functional_testcases.Irrigation_verify_Alert"/>
+    <class name = "functional_testcases.Verify_Edit_Irrigation_Settings"/> 
+    <class name = "functional_testcases.Delete_Irrigation"/>
+    <class name = "functional_testcases.Weather_UI_Navigation_flow"/>
+    <class name = "functional_testcases.Weather_Skip_Optional"/> 
+   <class name = "functional_testcases.Verify_Edit_Weather_Report"/>
+   <class name = "functional_testcases.Delete_Weather"/> 
+   <class name = "functional_testcases.WeatherThresholdTemperature"/>
+   <class name = "functional_testcases.Verify_Location_Alert_Message" /> 
+    
+    
+        
+
+
+
+//6th_October-Mobilize  android jar files path in test ng
+
+/Users/swathi/Desktop/Mobilize_Android-All_scripts_jar_files_4th_october/Mobilize_Android_Jars_Files
+<class name = "functional_testcases.FollowView"/>
+<class name = "functional_testcases.UnfollowView"/>
+<class name = "functional_testcases.View_Sharing_Shared_By_Users" /> 
+<class name = "functional_testcases.View_sharing_Not_Shared_By_Users" /> 
+     -->
+
+   </classes>
+  </test> 
+  <listeners>
+		<listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+		<listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+		<listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+	</listeners>
+</suite>

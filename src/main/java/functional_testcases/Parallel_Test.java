@@ -64,7 +64,7 @@ public void searchTest(String device) throws MalformedURLException,InterruptedEx
 				
 				System.out.println("*************BundleID**************");
 
-				apdriver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+				apdriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 				(new TestAppiumDriver()).setAppiumDriver(apdriver);
 				//ATUReports.indexPageDescription = " Mobilize test results ";
 				//ATUReports.currentRunDescription = "This is a test Run";
